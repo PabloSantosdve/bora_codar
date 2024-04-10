@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<button onclick="calcular()">calcular</button>
+	<script>
+		function calcular(){ 
+		let	n1 = parseInt(prompt("Digite um numero: "))
+		let n2 = parseInt(prompt("Digite um numero: "))
+		let n3 = parseInt(prompt("Digite um numero: "))
+		let n4 = parseInt(prompt("Digite um numero: "))
+		let n5 = parseInt(prompt("Digite um numero: "))
+		let n6 = parseInt(prompt("Digite um numero: "))
+		
+		let numeros = [n1, n2, n3, n4, n5, n6];
+		let soma = 0;
+
+		for(var i = 0; i <6; i++){
+			var numero = parseInt(prompt("Informe o " + (i + 1) + "° numero: "))
+			numeros.push(numero) //Adiciona o numer ao array
+		}
+
+		if(numero < 72){
+			soma += numero; 
+		}
+		document.write("Numeros informados pelo usuario: " + numeros)
+		
+		document.write("A soma dos numeros menores que 72 é: " + soma)
+		
+	}
+	</script>
+</body>
+</html>
